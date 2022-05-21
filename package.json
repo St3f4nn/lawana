@@ -1,0 +1,25 @@
+{
+  "name": "lawana",
+  "version": "1.0.0",
+  "description": "Travel Responsive Landing Page - developed with modern CSS technologies (CSS Flexbox and CSS Grid) in Tailwind (CSS low-level utility framework).",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/css/output.css",
+    "watch": "tailwindcss -i ./src/input.css -o ./dist/css/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/St3f4nn/lawana.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/St3f4nn/lawana/issues"
+  },
+  "homepage": "https://github.com/St3f4nn/lawana#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.24",
+    "tailwindcss-debug-screens": "^2.2.1"
+  }
+}
