@@ -507,7 +507,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-@media (min-width: 1536px) {
+@media (min-width: 1440px) {
   .debug-screens::before {
     content: 'screen: 2xl';
   }
@@ -517,7 +517,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   scroll-behavior: smooth;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
 }
