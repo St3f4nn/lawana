@@ -15,10 +15,14 @@ module.exports = {
     },
     extend: {
       spacing: {
+        1.75: '7px',
         3.75: '15px'
       },
       fontFamily: {
         'montserrat': "'Montserrat', sans-serif"
+      },
+      colors: {
+        '2b2922': '#2b2922'
       }
     },
   },

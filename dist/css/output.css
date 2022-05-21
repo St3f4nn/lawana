@@ -423,6 +423,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.nav-burger-line {
+  height: 0.25rem;
+  width: 2rem;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(43 41 34 / var(--tw-bg-opacity));
+}
+
 *, ::before, ::after {
   --tw-translate-x: 0;
   --tw-translate-y: 0;
@@ -466,6 +479,42 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
 }
 
 .debug-screens::before {
@@ -513,8 +562,70 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+.container {
+  max-width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 670px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 798px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1054px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1230px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1230px;
+  }
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.top-1\.75 {
+  top: 7px;
+}
+
+.left-1 {
+  left: 0.25rem;
+}
+
+.top-1 {
+  top: 0.25rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .scroll-smooth {
   scroll-behavior: smooth;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .font-montserrat {

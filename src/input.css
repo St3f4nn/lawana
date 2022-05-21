@@ -6,4 +6,8 @@
     .container {
         @apply px-3.75;
     }
+
+    .nav-burger-line {
+        @apply w-8 h-1 bg-2b2922 rounded-lg;
+    }
 }
