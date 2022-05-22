@@ -1,6 +1,7 @@
 module.exports = {
   content: [
-    "./dist/*.html"
+    "./dist/*.html",
+    "./dist/js/*.js"
   ],
   theme: {
     screens: {
@@ -15,14 +16,25 @@ module.exports = {
     },
     extend: {
       spacing: {
+        0.25: '1px',
         1.75: '7px',
-        3.75: '15px'
+        3.25: '13px',
+        3.75: '15px',
+        6.5: '26px',
+        10.5: '42px'
       },
       fontFamily: {
         'montserrat': "'Montserrat', sans-serif"
       },
       colors: {
-        '2b2922': '#2b2922'
+        '2b2922': '#2b2922',
+        'bfaa40': '#bfaa40',
+        'e7e6e4': '#e7e6e4',
+        'aba9a1': '#aba9a1',
+        'a08f36': '#a08f36'
+      },
+      borderRadius: {
+        '10': '10px'
       }
     },
   },

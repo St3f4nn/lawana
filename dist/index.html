@@ -16,9 +16,9 @@
 	</head>
 	<body class="debug-screens font-montserrat">
 		<!-- Header -->
-		<header id="nav">
-			<div class="container">
-				<div id="nav-logo">
+		<header id="nav" class="bg-2b2922 py-10.5">
+			<div class="container flex items-center justify-between lg:items-start">
+				<div id="nav-logo" class="flex gap-2 lg:mt-2.5">
 					<div id="nav-logo-img" class="relative">
 						<div id="nav-logo-img-background">
 							<img src="./resources/images/01_header/header_nav_background.svg" alt="header-nav-circle">
@@ -27,11 +27,11 @@
 							<img src="./resources/images/01_header/header_nav_foreground.svg" alt="header-nav-hammer">
 						</div>
 					</div>
-					<div id="nav-logo-text">Lawana</div>
+					<div id="nav-logo-text" class="text-2xl font-semibold text-bfaa40 mt-0.25">Lawana</div>
 				</div>
-				<div id="nav-menu">
+				<div id="nav-menu" class="lg:gap-10.5 flex lg:flex-row flex-col justify-around lg:justify-start absolute top-0 left-0 w-0 overflow-hidden h-screen bg-2b2922 bg-opacity-90 items-center lg:items-start lg:relative lg:w-max lg:h-max transition-all">
 					<div class="nav-menu-link">
-						<a href="#" class="nav-menu-link-el">Home</a>
+						<a href="#" class="font-bold nav-menu-link-el text-e7e6e4">Home</a>
 					</div>
 					<div class="nav-menu-link">
 						<a href="#" class="nav-menu-link-el">Pricing</a>
@@ -42,16 +42,17 @@
 					<div class="nav-menu-link">
 						<a href="#" class="nav-menu-link-el">Terms and Conditions</a>
 					</div>
-					<div class="nav-menu-link">
-						<a href="#" class="nav-menu-link-el">Get Started</a>
+					<div class="mt-0 nav-menu-link">
+						<a href="#" class="inline-block sm:pb-4 sm:pl-7 sm:pt-3.25 sm:pr-6.5 py-2 px-4 font-semibold transition-all border border-solid border-a08f36 hover:bg-a08f36 nav-menu-link-el text-a08f36 rounded-10">Get Started</a>
 					</div>
 				</div>
-				<div id="nav-burger">
+				<div id="nav-burger" class="cursor-pointer lg:hidden">
 					<div class="nav-burger-line"></div>
-					<div class="nav-burger-line mt-1"></div>
-					<div class="nav-burger-line mt-1"></div>
+					<div class="mt-1 nav-burger-line"></div>
+					<div class="mt-1 nav-burger-line"></div>
 				</div>
 			</div>
 		</header>
+		<script src="./js/script.js"></script>
 	</body>
 </html>

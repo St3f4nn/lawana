@@ -7,7 +7,15 @@
         @apply px-3.75;
     }
 
+    .nav-menu-link {
+        @apply mt-3.75;
+    }
+
+    .nav-menu-link-el {
+        @apply text-base text-center transition-all sm:text-lg text-aba9a1 hover:text-e7e6e4 lg:text-left;
+    }
+
     .nav-burger-line {
-        @apply w-8 h-1 bg-2b2922 rounded-lg;
+        @apply w-8 h-1 rounded-lg bg-bfaa40;
     }
 }
