@@ -18,4 +18,20 @@
     .nav-burger-line {
         @apply w-8 h-1 rounded-lg bg-bfaa40;
     }
+
+    .section-paragraph {
+        @apply text-sm leading-5.25 sm:text-xl font-normal sm:leading-8 text-white sm:text-e7e6e4 lg:max-w-120.5;
+    }
+
+    .showcase-arrow-box {
+        @apply w-17.5 h-17.5 flex items-center justify-center sm:w-31 sm:h-31 cursor-pointer hover:bg-bfaa40 transition-all;
+    }
+
+    #showcase-arrows-left:hover #showcase-arrows-left-arrow {
+        @apply transition-all border-white;
+    }
+
+    #showcase-arrows-left:hover #showcase-arrows-left-arrow svg path {
+        @apply transition-all stroke-white;
+    }
 }

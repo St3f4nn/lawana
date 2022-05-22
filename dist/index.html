@@ -14,9 +14,9 @@
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 		<title>Your Justice Is Our Top Priority | Lawana</title>
 	</head>
-	<body class="debug-screens font-montserrat">
+	<body class="font-montserrat debug-screens">
 		<!-- Header -->
-		<header id="nav" class="bg-2b2922 py-10.5">
+		<header id="nav" class="bg-2b2922 py-6 sm:py-8 lg:py-10.5 relative z-50">
 			<div class="container flex items-center justify-between lg:items-start">
 				<div id="nav-logo" class="flex gap-2 lg:mt-2.5">
 					<div id="nav-logo-img" class="relative">
@@ -29,7 +29,7 @@
 					</div>
 					<div id="nav-logo-text" class="text-2xl font-semibold text-bfaa40 mt-0.25">Lawana</div>
 				</div>
-				<div id="nav-menu" class="lg:gap-10.5 flex lg:flex-row flex-col justify-around lg:justify-start absolute top-0 left-0 w-0 overflow-hidden h-screen bg-2b2922 bg-opacity-90 items-center lg:items-start lg:relative lg:w-max lg:h-max transition-all">
+				<div id="nav-menu" class="lg:gap-10.5 flex lg:flex-row flex-col justify-around lg:justify-start absolute top-0 left-0 w-0 overflow-hidden h-screen bg-2b2922 bg-opacity-90 items-center lg:items-start lg:relative lg:w-max lg:h-max transition-all lg:bg-transparent z-50">
 					<div class="nav-menu-link">
 						<a href="#" class="font-bold nav-menu-link-el text-e7e6e4">Home</a>
 					</div>
@@ -53,6 +53,40 @@
 				</div>
 			</div>
 		</header>
+		<!-- Showcase -->
+		<section id="showcase" class="bg-2b2922 lg:pt-9.5 pt-16.75 h-217 lg:h-max relative">
+			<div class="container">
+				<div id="showcase-header" class="relative z-40 flex flex-col items-center lg:items-start lg:flex-row lg:justify-between">
+					<div id="showcase-header-heading" class="font-extrabold text-center text-white text-49 sm:text-72 sm:leading-25 lg:max-w-172 lg:text-left sm:text-f1f0ef">Your Justice Is Our Top Priority</div>
+					<div id="showcase-header-text" class="text-center section-paragraph pt-6.25 lg:pt-9 lg:text-left">As a state of law, maintaining justice is something that every citizen must pay attention to, and we are here to uphold justice for you</div>
+				</div>
+			</div>
+			<div id="showcase-img" class="absolute bottom-0 left-0 right-0 h-full lg:mt-20 lg:relative">
+				<img src="./resources/images/02_showcase/showcase_img.svg" alt="showcase-img" class="object-cover w-full h-full">
+			</div>
+			<div id="showcase-arrows" class="absolute flex -translate-x-1/2 -bottom-8.75 lg:justify-end lg:relative left-1/2 lg:translate-x-0 lg:left-auto sm:bottom-0">
+				<div id="showcase-arrows-left" class="bg-39372d showcase-arrow-box">
+					<div id="showcase-arrows-left-arrow" class="border-0.228629 sm:border-0.35 border-solid border-a08f36 py-2.593871 sm:py-4.65 pr-3.298871 sm:pr-5.9 pl-3.191371 sm:pl-5.7075 rounded-full">
+						<svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="hidden sm:block">
+							<path d="M13 22L2.23077 12L13 2" stroke="#A08F36" stroke-width="2" stroke-linecap="square">
+						</svg>
+						<svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="sm:hidden">
+							<path d="M7.82294 12.6443L1.74353 6.99917L7.82294 1.354" stroke="#A08F36" stroke-width="1.30645" stroke-linecap="square">
+						</svg>	
+					</div>
+				</div>
+				<div id="showcase-arrows-right" class="bg-a08f36 showcase-arrow-box">
+					<div id="showcase-arrows-right-arrow" class="border-0.228629 sm:border-0.35 border-solid border-white py-2.593871 sm:py-4.65 pl-3.298871 sm:pl-5.9 pr-3.191371 sm:pr-5.7075 rounded-full">
+						<svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="hidden sm:block">
+							<path d="M2 2L12.7692 12L2 22" stroke="white" stroke-width="2" stroke-linecap="square">
+						</svg>
+						<svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="sm:hidden">
+							<path d="M1.17706 1.35567L7.25647 7.00083L1.17706 12.646" stroke="white" stroke-width="1.30645" stroke-linecap="square">
+						</svg>	
+					</div>
+				</div>
+			</div>
+		</section>
 		<script src="./js/script.js"></script>
 	</body>
 </html>
