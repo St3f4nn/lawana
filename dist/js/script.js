@@ -2,8 +2,10 @@
 
 const navBurger = document.querySelector('#nav-burger');
 const navMenu = document.querySelector('#nav-menu');
+const htmlBody = document.querySelector('body');
 
 navBurger.addEventListener('click', () => {
+    htmlBody.classList.toggle('overflow-hidden');
     let screenWidth = screen.availWidth;
 
     if (screenWidth >= 768) {

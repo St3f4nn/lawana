@@ -21,29 +21,29 @@
 				<div id="nav-logo" class="flex gap-2 lg:mt-2.5">
 					<div id="nav-logo-img" class="relative">
 						<div id="nav-logo-img-background">
-							<img src="./resources/images/01_header/header_nav_background.svg" alt="header-nav-circle">
+							<img src="./resources/images/01_navigation_bar/nav_background.svg" alt="nav-circle">
 						</div>
 						<div id="nav-logo-img-foreground" class="absolute top-1.75 left-1">
-							<img src="./resources/images/01_header/header_nav_foreground.svg" alt="header-nav-hammer">
+							<img src="./resources/images/01_navigation_bar/nav_foreground.svg" alt="nav-hammer">
 						</div>
 					</div>
 					<div id="nav-logo-text" class="text-2xl font-semibold text-bfaa40 mt-0.25">Lawana</div>
 				</div>
 				<div id="nav-menu" class="lg:gap-10.5 flex lg:flex-row flex-col justify-around lg:justify-start absolute top-0 left-0 w-0 overflow-hidden h-screen bg-2b2922 bg-opacity-90 items-center lg:items-start lg:relative lg:w-max lg:h-max transition-all lg:bg-transparent z-50">
 					<div class="nav-menu-link">
-						<a href="#" class="font-bold nav-menu-link-el text-e7e6e4">Home</a>
+						<a href="#" target="_blank" class="font-bold nav-menu-link-el text-e7e6e4">Home</a>
 					</div>
 					<div class="nav-menu-link">
-						<a href="#" class="nav-menu-link-el">Pricing</a>
+						<a href="#" target="_blank" class="nav-menu-link-el">Pricing</a>
 					</div>
 					<div class="nav-menu-link">
-						<a href="#footer" class="nav-menu-link-el">Contact</a>
+						<a href="#footer" target="_blank" class="nav-menu-link-el">Contact</a>
 					</div>
 					<div class="nav-menu-link">
-						<a href="#" class="nav-menu-link-el">Terms and Conditions</a>
+						<a href="#" target="_blank" class="nav-menu-link-el">Terms and Conditions</a>
 					</div>
 					<div class="mt-0 nav-menu-link">
-						<a href="#" class="inline-block sm:pb-4 sm:pl-7 sm:pt-3.25 sm:pr-6.5 py-2 px-4 font-semibold transition-all border border-solid border-a08f36 hover:bg-a08f36 nav-menu-link-el text-a08f36 rounded-10">Get Started</a>
+						<a href="#" target="_blank" class="inline-block sm:pb-4 sm:pl-7 sm:pt-3.25 sm:pr-6.5 py-2 px-4 font-semibold transition-all border border-solid border-a08f36 hover:bg-a08f36 nav-menu-link-el text-a08f36 rounded-10">Get Started</a>
 					</div>
 				</div>
 				<div id="nav-burger" class="cursor-pointer lg:hidden">
@@ -62,7 +62,7 @@
 				</div>
 			</div>
 			<div id="showcase-img" class="absolute bottom-0 left-0 right-0 h-full lg:mt-20 lg:relative">
-				<img src="./resources/images/02_showcase/showcase_img.svg" alt="showcase-img" class="object-cover w-full h-full">
+				<img src="./resources/images/02_showcase/showcase_img.jpg" alt="showcase-img" class="object-cover w-full h-full">
 			</div>
 			<div id="showcase-arrows" class="absolute flex -translate-x-1/2 -bottom-8.75 lg:justify-end lg:relative left-1/2 lg:translate-x-0 lg:left-auto sm:bottom-0">
 				<div id="showcase-arrows-left" class="bg-39372d showcase-arrow-box">
@@ -83,6 +83,35 @@
 						<svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="sm:hidden">
 							<path d="M1.17706 1.35567L7.25647 7.00083L1.17706 12.646" stroke="white" stroke-width="1.30645" stroke-linecap="square">
 						</svg>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- About 1 -->
+		<div id="about-1" class="bg-2b2922 pb-25 pt-33.75 sm:py-37.5">
+			<div class="container relative flex flex-col px-6.25 lg:justify-between lg:flex-row">
+				<div id="about-1-img" class="mt-45.75 sm:mt-0">
+					<div id="about-1-img-main" class="hidden sm:block">
+						<img src="./resources/images/03_about_1/about_1_main.jpg" alt="about-1-main">
+					</div>
+					<div id="about-1-img-main-mobile" class="sm:hidden">
+						<img src="./resources/images/03_about_1/about_1_main_mobile.jpg" alt="about-1-main-mobile">
+					</div>
+					<div id="about-1-img-side" class="absolute sm:left-53.75 sm:top-22.75 lg:left-22.75 xl:left-53.75 lg:-translate-y-1/2 lg:top-1/2 w-max bottom-41.75 right-6.25 sm:bottom-auto">
+						<div id="about-1-img-side-background" class="hidden sm:block">
+							<img src="./resources/images/03_about_1/about_1_side.jpg" alt="about-1-side">
+						</div>
+						<div id="about-1-img-side-background-mobile" class="sm:hidden">
+							<img src="./resources/images/03_about_1/about_1_side_mobile.jpg" alt="about-1-side-mobile">
+						</div>
+						<div id="about-1-img-side-text" class="sm:px-6 sm:pt-6 sm:pb-8 sm:text-xl font-semibold sm:leading-8 text-white bg-a08f36 text-13 leading-4.325 max-w-54.25 sm:max-w-100 pt-3.9325 pb-3.94 pl-3.24 pr-3.49">Our Lawyer Is Observing The Evidence In The Matter</div>
+					</div>
+				</div>
+				<div id="about-1-text" class="lg:mt-22.75 sm:mt-6">
+					<div id="about-1-text-heading" class="section-heading max-w-71.5 sm:max-w-max lg:max-w-120.5 absolute top-0 sm:block sm:relative right-6.25 left-6.25 bg-opacity-50 sm:left-0">Get Justice In Law From Crime</div>
+					<div id="about-1-text-paragraph" class="mt-42.25 sm:mt-6 section-paragraph text-e7e6e4">We protect you from all crimes and help find the truth and freedom for you, with our professional lawyers it can definitely be done quickly and actually</div>
+					<div id="about-1-text-link" class="mt-4.5 lg:mt-18">
+						<a href="#" target="_blank" class="section-link">See more about this</a>
 					</div>
 				</div>
 			</div>
