@@ -42,4 +42,32 @@
     .section-link {
         @apply text-sm font-normal underline transition-all sm:text-xl text-a08f36 hover:text-e7e6e4 decoration-1 hover:no-underline;
     }
+
+    .services-container-item {
+        @apply xl:max-w-71.25 bg-333128 px-6 pt-8 pb-10.5;
+    }
+
+    .services-container-item-heading {
+        @apply font-semibold text-22 sm:text-2xl text-e7e6e4 mt-3.25 sm:mt-4;
+    }
+
+    .services-container-item-text {
+        @apply font-normal sm:text-lg sm:leading-6 sm:text-dddcd9 text-e7e6e4 text-sm leading-5.25 mt-1.25 sm:mt-4;
+    }
+
+    .services-container-item-bottom {
+        @apply flex sm:items-center justify-between mt-2.25 sm:mt-8;
+    }
+
+    .services-link {
+        @apply text-lg font-normal leading-6 underline transition-all text-bfaa40 decoration-1 hover:text-dddcd9 hover:no-underline;
+    }
+
+    .services-container-item-bottom-btn {
+        @apply border-0.3 border-bfaa40 border-solid w-11.25 h-11.25 sm:w-10.5 sm:h-10.5 flex items-center justify-center cursor-pointer hover:bg-bfaa40 transition-all rounded-full mt-2 sm:mt-0;
+    }
+
+    .services-container-item-bottom-btn:hover svg path {
+        @apply transition-all stroke-white;
+    }
 }
