@@ -70,4 +70,20 @@
     .services-container-item-bottom-btn:hover svg path {
         @apply transition-all stroke-white;
     }
+
+    .team-header-dots-container-circle {
+        @apply w-3 h-3 transition-all rounded-full cursor-pointer bg-444236 hover:scale-125;
+    }
+
+    .dots-active {
+        @apply w-6 h-6 bg-bfaa40;
+    }
+
+    .team-arrow {
+        @apply flex items-center justify-center transition-all bg-blue-500 rounded-full cursor-pointer w-15 h-15 hover:bg-bfaa40;
+    }
+
+    #team-header-arrows-left:hover svg path {
+        @apply transition-all stroke-white;
+    }
 }
