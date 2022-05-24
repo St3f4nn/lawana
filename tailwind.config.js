@@ -120,6 +120,7 @@ module.exports = {
         15: '60px',
         17.5: '70px',
         31: '124px',
+        150: '600px',
         217: '868px'
       },
       borderWidth: {
