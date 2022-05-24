@@ -86,4 +86,8 @@
     #team-header-arrows-left:hover svg path {
         @apply transition-all stroke-white;
     }
+
+    .team-container-member {
+        @apply flex-grow-0 flex-shrink-0 basis-auto;
+    }
 }
