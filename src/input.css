@@ -47,6 +47,10 @@
         @apply xl:max-w-71.25 bg-333128 px-6 pt-8 pb-10.5;
     }
 
+    .services-container-item-icon {
+        @apply w-15.25 h-15.25 sm:w-18 sm:h-18 bg-center bg-no-repeat bg-cover;
+    }
+
     .services-container-item-heading {
         @apply font-semibold text-22 sm:text-2xl text-e7e6e4 mt-3.25 sm:mt-4;
     }
@@ -89,5 +93,33 @@
 
     .team-container-member {
         @apply flex-grow-0 flex-shrink-0 basis-auto;
+    }
+
+    .testimonials-container-card {
+        @apply bg-2e2c24 sm:p-10.5 pt-7 px-7.25 pb-8 lg:flex-grow-0 lg:flex-shrink-0 lg:basis-125;
+    }
+
+    .testimonials-card-img {
+        @apply bg-center bg-no-repeat bg-cover rounded-full w-14 h-14 sm:w-18 sm:h-18;
+    }
+
+    .testimonials-card-paragraph {
+        @apply font-normal text-sm leading-5.25 text-e7e6e4 sm:text-xl sm:leading-8 mt-4.5 sm:mt-4;
+    }
+
+    .testimonials-card-bottom {
+        @apply flex justify-between mt-4.5 sm:mt-8;
+    }
+
+    .testimonials-card-bottom-info-name {
+        @apply font-bold text-xl leading-6.095 text-white;
+    }
+
+    .testimonials-card-bottom-info-role {
+        @apply font-normal text-sm leading-4.2675 text-d8d8d4 mt-2.25 sm:mt-2 sm:text-lg sm:leading-5.485;
+    }
+
+    .testimonials-card-bottom-icon {
+        @apply w-8.5 h-6.25 sm:w-12.5 sm:h-10.5 bg-center bg-cover bg-no-repeat mt-8.75 sm:mt-4.75;
     }
 }

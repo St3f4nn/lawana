@@ -590,6 +590,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+.services-container-item-icon {
+  height: 61px;
+  width: 61px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 640px) {
+  .services-container-item-icon {
+    height: 72px;
+    width: 72px;
+  }
+}
+
 .services-container-item-heading {
   margin-top: 13px;
   font-size: 22px;
@@ -754,6 +769,120 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-shrink: 0;
   flex-grow: 0;
   flex-basis: auto;
+}
+
+.testimonials-container-card {
+  --tw-bg-opacity: 1;
+  background-color: rgb(46 44 36 / var(--tw-bg-opacity));
+  padding-left: 29px;
+  padding-right: 29px;
+  padding-top: 1.75rem;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 640px) {
+  .testimonials-container-card {
+    padding: 42px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .testimonials-container-card {
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: 500px;
+  }
+}
+
+.testimonials-card-img {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 9999px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 640px) {
+  .testimonials-card-img {
+    height: 72px;
+    width: 72px;
+  }
+}
+
+.testimonials-card-paragraph {
+  margin-top: 18px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  line-height: 21px;
+  --tw-text-opacity: 1;
+  color: rgb(231 230 228 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .testimonials-card-paragraph {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+}
+
+.testimonials-card-bottom {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 640px) {
+  .testimonials-card-bottom {
+    margin-top: 2rem;
+  }
+}
+
+.testimonials-card-bottom-info-name {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  line-height: 24.38px;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.testimonials-card-bottom-info-role {
+  margin-top: 9px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  line-height: 17.07px;
+  --tw-text-opacity: 1;
+  color: rgb(216 216 212 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .testimonials-card-bottom-info-role {
+    margin-top: 0.5rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    line-height: 21.94px;
+  }
+}
+
+.testimonials-card-bottom-icon {
+  margin-top: 35px;
+  height: 25px;
+  width: 34px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 640px) {
+  .testimonials-card-bottom-icon {
+    margin-top: 19px;
+    height: 42px;
+    width: 50px;
+  }
 }
 
 *, ::before, ::after {
@@ -1080,6 +1209,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: -109px;
 }
 
+.mt-15\.5 {
+  margin-top: 62px;
+}
+
+.mt-15 {
+  margin-top: 60px;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -1148,6 +1285,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-77\.75 {
   max-width: 311px;
+}
+
+.max-w-max {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 
 .-translate-x-1\/2 {
@@ -1225,6 +1368,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-4\.75 {
+  gap: 19px;
 }
 
 .overflow-hidden {
@@ -1437,6 +1584,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 12.82px;
 }
 
+.pr-6\.25 {
+  padding-right: 25px;
+}
+
+.pr-6 {
+  padding-right: 1.5rem;
+}
+
+.pr-7\.5 {
+  padding-right: 30px;
+}
+
+.pr-7 {
+  padding-right: 1.75rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1552,6 +1715,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .sm\:mt-8 {
     margin-top: 2rem;
+  }
+
+  .sm\:mt-12\.5 {
+    margin-top: 50px;
+  }
+
+  .sm\:mt-12 {
+    margin-top: 3rem;
   }
 
   .sm\:block {
@@ -1689,6 +1860,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-bottom: 2rem;
   }
 
+  .sm\:pl-0 {
+    padding-left: 0px;
+  }
+
+  .sm\:pr-0 {
+    padding-right: 0px;
+  }
+
   .sm\:text-72 {
     font-size: 72px;
   }
@@ -1807,6 +1986,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
@@ -1863,6 +2046,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:pt-9 {
     padding-top: 2.25rem;
+  }
+
+  .lg\:pr-18 {
+    padding-right: 72px;
   }
 
   .lg\:text-left {
