@@ -8,7 +8,7 @@
     }
 
     .nav-menu-link {
-        @apply mt-3.75;
+        @apply lg:mt-3.75;
     }
 
     .nav-menu-link-el {
@@ -20,7 +20,7 @@
     }
 
     .section-paragraph {
-        @apply text-sm leading-5.25 sm:text-xl font-normal sm:leading-8 text-white sm:text-e7e6e4 lg:max-w-120.5;
+        @apply text-sm leading-5.25 sm:text-xl font-normal sm:leading-8 text-e7e6e4;
     }
 
     .showcase-arrow-box {
@@ -36,11 +36,11 @@
     }
 
     .section-heading {
-        @apply font-extrabold text-4xl sm:text-50 sm:leading-16.25 text-f1f0ef;
+        @apply font-extrabold text-4xl leading-10.97 sm:text-50 sm:leading-16.25 text-f1f0ef;
     }
 
     .section-link {
-        @apply text-sm font-normal underline transition-all sm:text-xl text-a08f36 hover:text-e7e6e4 decoration-1 hover:no-underline;
+        @apply text-sm leading-4.2675 font-normal underline transition-all sm:text-xl sm:leading-6.095 text-a08f36 hover:text-e7e6e4 decoration-1 hover:no-underline;
     }
 
     .services-container-item {
@@ -64,7 +64,7 @@
     }
 
     .services-link {
-        @apply text-lg font-normal leading-6 underline transition-all text-bfaa40 decoration-1 hover:text-dddcd9 hover:no-underline;
+        @apply text-sm font-normal leading-6 underline transition-all sm:text-lg text-bfaa40 decoration-1 hover:text-dddcd9 hover:no-underline;
     }
 
     .services-container-item-bottom-btn {
