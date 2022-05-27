@@ -36,6 +36,7 @@ module.exports = {
         4.25: '17px',
         4.5: '18px',
         4.75: '19px',
+        5.5: '22px',
         6.1375: '24.55px',
         6.25: '25px',
         6.5: '26px',
@@ -48,6 +49,7 @@ module.exports = {
         10.75: '43px',
         12.5: '50px',
         12.75: '51px',
+        14.25: '57px',
         15: '60px',
         15.5: '62px',
         15.75: '63px',
@@ -57,6 +59,7 @@ module.exports = {
         20.5: '82px',
         22.75: '91px',
         25: '100px',
+        26.75: '107px',
         27: '108px',
         33.25: '133px',
         33.75: '135px',
@@ -125,6 +128,7 @@ module.exports = {
       },
       maxWidth: {
         47.52: '190.08px',
+        47.75: '191px',
         54.25: '217px',
         71.25: '285px',
         71.5: '286px',
@@ -163,6 +167,7 @@ module.exports = {
         15.25: '61px',
         17.5: '70px',
         31: '124px',
+        32.295: '129.18px',
         35.5: '142px',
         60: '240px',
         150: '600px',
@@ -180,7 +185,10 @@ module.exports = {
         'about-1-side': "url('../resources/images/03_about_1/about_1_side.jpg');",
         'about-1-side-mobile': "url('../resources/images/03_about_1/about_1_side_mobile.jpg');",
         'about-1-main': " url('../resources/images/03_about_1/about_1_main.jpg');",
-        'about-1-main-mobile': " url('../resources/images/03_about_1/about_1_main_mobile.jpg');"
+        'about-1-main-mobile': " url('../resources/images/03_about_1/about_1_main_mobile.jpg');",
+        'about-2-main': "url('../resources/images/05_about_2/about_2_main.jpg')",
+        'about-2-main-mobile': "url('../resources/images/05_about_2/about_2_main_mobile.jpg')",
+        'about-2-side': "url('../resources/images/05_about_2/about_2_side.jpg');"
       }
     },
   },

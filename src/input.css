@@ -44,7 +44,7 @@
     }
 
     .services-container-item {
-        @apply xl:max-w-71.25 bg-333128 px-6 pt-8 pb-10.5;
+        @apply bg-333128 px-6 pt-8 pb-10.5;
     }
 
     .services-container-item-icon {
