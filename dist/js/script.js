@@ -18,6 +18,38 @@ const btnLeft = document.querySelector('#showcase-arrows-left');
 const btnRight = document.querySelector('#showcase-arrows-right');
 let counterNumber = 0;
 
+const testimonialsSlider = document.querySelector('#testimonials-container');
+const testimonialsSliderCards = document.querySelectorAll('.testimonials-container-card');
+
+let index = 0;
+const interval = 5000;
+
+const testimonialWidth = testimonialsSliderCards[index].clientWidth;
+
+// Functions
+
+const startSliding = () => {
+    setInterval(() => {
+        index++;
+        testimonialsSlider.style.transform = `translateX(${(-testimonialWidth - 24) * index}px)`;
+        
+        if (index > testimonialsSliderCards.length - 1) {
+            index = 0;
+            resetSliding();
+        };
+    }, interval);
+};
+
+const resetSliding = () => {
+    testimonialsSlider.style.transform = `translateX(0px)`;
+};
+
+// if (window.innerWidth >= 1024) {
+//     startSliding();
+// } else {
+//     resetSliding();
+// };
+
 // Event listeners
 
 navBurger.addEventListener('click', () => {
