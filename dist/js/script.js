@@ -44,11 +44,11 @@ const resetSliding = () => {
     testimonialsSlider.style.transform = `translateX(0px)`;
 };
 
-// if (window.innerWidth >= 1024) {
-//     startSliding();
-// } else {
-//     resetSliding();
-// };
+if (window.innerWidth >= 1024) {
+    startSliding();
+} else {
+    resetSliding();
+};
 
 // Event listeners
 
