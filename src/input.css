@@ -16,7 +16,7 @@
     }
 
     .nav-burger-line {
-        @apply w-6 sm:w-8 h-0.5 sm:h-1 rounded-lg bg-bfaa40;
+        @apply w-6 h-0.5 bg-bfaa40;
     }
 
     .section-paragraph {
@@ -75,24 +75,52 @@
         @apply transition-all stroke-white;
     }
 
-    .team-header-dots-container-circle {
-        @apply w-3 h-3 transition-all rounded-full cursor-pointer bg-444236 hover:scale-125;
+    .team-dots-dot {
+        @apply sm:w-3 sm:h-3 rounded-full bg-444236 w-2.5 h-2.5;
     }
 
-    .dots-active {
-        @apply w-6 h-6 bg-bfaa40;
+    .team-dots-dot.active-dot {
+        @apply w-4 h-4 sm:w-6 sm:h-6 bg-bfaa40;
     }
 
-    .team-arrow {
-        @apply flex items-center justify-center transition-all bg-blue-500 rounded-full cursor-pointer w-15 h-15 hover:bg-bfaa40;
+    .team-container-card {
+        @apply w-max sm:pt-22.25 pt-52.91 bg-no-repeat bg-center bg-cover flex-shrink-0 flex-grow-0;
     }
 
-    #team-header-arrows-left:hover svg path {
-        @apply transition-all stroke-white;
+    .team-container-card.active-card {
+        @apply sm:px-10.5 sm:pb-8 sm:pt-63 pb-6.3425 pt-60 px-8.425;
     }
 
-    .team-container-member {
-        @apply flex-grow-0 flex-shrink-0 basis-auto;
+    .team-container-card.active-card .team-container-card-content-paragraph {
+        @apply sm:max-w-80.25 max-w-64.3975;
+    }
+
+    .team-container-card-content {
+        @apply flex flex-col items-center text-center;
+    }
+
+    .team-container-card-content-heading {
+        @apply text-2xl font-bold text-white;
+    }
+
+    .team-container-card-content-paragraph {
+        @apply font-medium text-sm leading-4.2675 text-white sm:text-xl sm:leading-8 sm:text-c4c4c4 mt-3.71 sm:mt-4 max-w-71.25;
+    }
+
+    .team-container-card-content-link {
+        @apply sm:mt-6;
+    }
+
+    .team-container-card-content-link-el {
+        @apply text-sm font-medium leading-6 text-white underline transition-all sm:text-lg sm:text-c4c4c4 decoration-1 hover:text-white hover:no-underline;
+    }
+
+    .team-container-card-content-cta {
+        @apply border-0.3 border-solid border-white cursor-pointer w-10 h-10 sm:w-10.5 sm:h-10.5 flex items-center justify-center mt-5.105 sm:mt-12.5 rounded-full hover:bg-white transition-all;
+    }
+
+    .team-container-card-content-cta:hover svg path {
+        @apply transition-all stroke-2b2922;
     }
 
     .testimonials-container-card {

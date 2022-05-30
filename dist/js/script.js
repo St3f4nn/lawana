@@ -28,8 +28,8 @@ const testimonialWidth = testimonialsSliderCards[index].clientWidth;
 
 // Functions
 
-const startSliding = () => {
-    setInterval(() => {
+function startSliding() {
+    setInterval(function() {
         index++;
         testimonialsSlider.style.transform = `translateX(${(-testimonialWidth - 24) * index}px)`;
         
@@ -40,7 +40,7 @@ const startSliding = () => {
     }, interval);
 };
 
-const resetSliding = () => {
+function resetSliding() {
     testimonialsSlider.style.transform = `translateX(0px)`;
 };
 

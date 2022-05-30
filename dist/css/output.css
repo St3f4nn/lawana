@@ -466,16 +466,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .nav-burger-line {
   height: 2px;
   width: 1.5rem;
-  border-radius: 0.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(191 170 64 / var(--tw-bg-opacity));
-}
-
-@media (min-width: 640px) {
-  .nav-burger-line {
-    height: 0.25rem;
-    width: 2rem;
-  }
 }
 
 .section-paragraph {
@@ -718,8 +710,182 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 150ms;
 }
 
-#team-header-arrows-left:hover svg path {
-  stroke: #fff;
+.team-dots-dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(68 66 54 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 640px) {
+  .team-dots-dot {
+    height: 0.75rem;
+    width: 0.75rem;
+  }
+}
+
+.team-dots-dot.active-dot {
+  height: 1rem;
+  width: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(191 170 64 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 640px) {
+  .team-dots-dot.active-dot {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+
+.team-container-card {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  flex-shrink: 0;
+  flex-grow: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 211.64px;
+}
+
+@media (min-width: 640px) {
+  .team-container-card {
+    padding-top: 89px;
+  }
+}
+
+.team-container-card.active-card {
+  padding-left: 33.7px;
+  padding-right: 33.7px;
+  padding-bottom: 25.37px;
+  padding-top: 240px;
+}
+
+@media (min-width: 640px) {
+  .team-container-card.active-card {
+    padding-left: 42px;
+    padding-right: 42px;
+    padding-bottom: 2rem;
+    padding-top: 252px;
+  }
+}
+
+.team-container-card.active-card .team-container-card-content-paragraph {
+  max-width: 257.59px;
+}
+
+@media (min-width: 640px) {
+  .team-container-card.active-card .team-container-card-content-paragraph {
+    max-width: 321px;
+  }
+}
+
+.team-container-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.team-container-card-content-heading {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.team-container-card-content-paragraph {
+  margin-top: 14.84px;
+  max-width: 285px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  line-height: 17.07px;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .team-container-card-content-paragraph {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    --tw-text-opacity: 1;
+    color: rgb(196 196 196 / var(--tw-text-opacity));
+  }
+
+  .team-container-card-content-link {
+    margin-top: 1.5rem;
+  }
+}
+
+.team-container-card-content-link-el {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.team-container-card-content-link-el:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+@media (min-width: 640px) {
+  .team-container-card-content-link-el {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    --tw-text-opacity: 1;
+    color: rgb(196 196 196 / var(--tw-text-opacity));
+  }
+}
+
+.team-container-card-content-cta {
+  margin-top: 20.42px;
+  display: flex;
+  height: 2.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border-width: 1.2px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.team-container-card-content-cta:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 640px) {
+  .team-container-card-content-cta {
+    margin-top: 50px;
+    height: 42px;
+    width: 42px;
+  }
+}
+
+.team-container-card-content-cta:hover svg path {
+  stroke: #2b2922;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -1146,6 +1312,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 0px;
 }
 
+.mt-1\.25 {
+  margin-top: 5px;
+}
+
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -1465,12 +1635,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 26px;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .gap-4\.75 {
   gap: 19px;
 }
 
 .gap-0 {
   gap: 0px;
+}
+
+.gap-3\.3325 {
+  gap: 13.33px;
 }
 
 .overflow-hidden {
@@ -1545,6 +1723,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(20 83 45 / var(--tw-bg-opacity));
 }
 
+.bg-green-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-90 {
   --tw-bg-opacity: 0.9;
 }
@@ -1567,6 +1750,46 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-about-2-side {
   background-image: url('../resources/images/05_about_2/about_2_side.jpg');;
+}
+
+.bg-lawyer-1 {
+  background-image: url('../resources/images/06_team/team_lawyer_1.jpg');;
+}
+
+.bg-lawyer-2 {
+  background-image: url('../resources/images/06_team/team_lawyer_2.jpg');;
+}
+
+.bg-lawyer-3 {
+  background-image: url('../resources/images/06_team/team_lawyer_3.jpg');;
+}
+
+.bg-lawyer-4 {
+  background-image: url('../resources/images/06_team/team_lawyer_4.jpg');;
+}
+
+.bg-lawyer-5 {
+  background-image: url('../resources/images/06_team/team_lawyer_5.jpg');;
+}
+
+.bg-lawyer-6 {
+  background-image: url('../resources/images/06_team/team_lawyer_6.jpg');;
+}
+
+.bg-lawyer-7 {
+  background-image: url('../resources/images/06_team/team_lawyer_7.jpg');;
+}
+
+.bg-lawyer-8 {
+  background-image: url('../resources/images/06_team/team_lawyer_8.jpg');;
+}
+
+.bg-lawyer-9 {
+  background-image: url('../resources/images/06_team/team_lawyer_9.jpg');;
+}
+
+.bg-lawyer-10 {
+  background-image: url('../resources/images/06_team/team_lawyer_10.jpg');;
 }
 
 .bg-cover {
@@ -1759,11 +1982,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 49px;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1831,11 +2049,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-slate-50 {
-  --tw-text-opacity: 1;
-  color: rgb(248 250 252 / var(--tw-text-opacity));
 }
 
 .text-d8d7d4 {
@@ -1961,6 +2174,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .sm\:gap-6 {
     gap: 1.5rem;
+  }
+
+  .sm\:gap-8 {
+    gap: 2rem;
+  }
+
+  .sm\:gap-4 {
+    gap: 1rem;
   }
 
   .sm\:bg-about-1-main {
@@ -2302,9 +2523,5 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:pl-50 {
     padding-left: 200px;
-  }
-
-  .xl\:pr-0 {
-    padding-right: 0px;
   }
 }
