@@ -7,16 +7,16 @@
         @apply px-3.75;
     }
 
-    .nav-menu-link {
+    /* .nav-menu-link {
         @apply lg:mt-3.75;
-    }
+    } */
 
     .nav-menu-link-el {
         @apply text-base text-center transition-all sm:text-lg text-aba9a1 hover:text-e7e6e4 lg:text-left;
     }
 
     .nav-burger-line {
-        @apply w-6 h-0.5 bg-bfaa40;
+        @apply w-6 h-0.5 bg-2b2922;
     }
 
     .section-paragraph {
@@ -76,7 +76,7 @@
     }
 
     .team-dots-dot {
-        @apply sm:w-3 sm:h-3 rounded-full bg-444236 w-2.5 h-2.5;
+        @apply sm:w-3 sm:h-3 rounded-full bg-444236 w-2.5 h-2.5 transition-all;
     }
 
     .team-dots-dot.active-dot {
@@ -88,15 +88,19 @@
     }
 
     .team-container-card.active-card {
-        @apply sm:px-10.5 sm:pb-8 sm:pt-63 pb-6.3425 pt-60 px-8.425;
+        @apply sm:px-10.5 sm:pb-8 sm:pt-63 pb-6.3425 pt-60 px-8.425 transition-all;
     }
 
     .team-container-card.active-card .team-container-card-content-paragraph {
-        @apply sm:max-w-80.25 max-w-64.3975;
+        @apply sm:max-w-80.25 max-w-64.3975 transition-all;
+    }
+
+    .team-container-card.active-card .team-container-card-content {
+        @apply transition-all opacity-100;
     }
 
     .team-container-card-content {
-        @apply flex flex-col items-center text-center;
+        @apply flex flex-col items-center text-center opacity-0;
     }
 
     .team-container-card-content-heading {
