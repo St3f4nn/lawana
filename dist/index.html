@@ -16,14 +16,14 @@
 	</head>
 	<body class="overflow-x-hidden font-montserrat debug-screens bg-2b2922">
 		<!-- Navigation bar -->
-		<div id="nav" class="absolute top-0 left-0 right-0 z-50 bg-red-500 lg:relative">
-			<div class="container flex items-center lg:items-start">
-				<div id="nav-logo" class="flex gap-1.635 lg:gap-2 bg-green-500">
+		<div id="nav" class="absolute top-0 left-0 right-0 z-50 lg:relative py-12.5 lg:py-10.5">
+			<div class="container flex items-center justify-between lg:items-start">
+				<div id="nav-logo" class="flex gap-1.635 lg:gap-2 items-start lg:mt-2.5">
 					<div id="nav-logo-img" class="overflow-hidden relative w-6.54 h-6.54 lg:w-8 lg:h-8 rounded-full bg-2b2922 lg:bg-bfaa40">
 						<img src="./resources/images/01_navigation_bar/nav_hammer.svg" alt="nav-hammer" class="absolute left-1 top-1.75 bottom-1.0175 hidden sm:block">
 						<img src="./resources/images/01_navigation_bar/nav_hammer_mobile.svg" alt="nav-hammer-mobile" class="absolute top-1.43 left-0.8175 bottom-0.8325 lg:hidden">
 					</div>
-					<div id="nav-logo-text" class="font-semibold text-19.62 leading-5.98 text-2b2922 lg:text-bfaa40 lg:text-2xl lg:leading-7.315 bg-yellow-400">Lawana</div>
+					<div id="nav-logo-text" class="font-semibold text-19.62 leading-5.98 text-2b2922 lg:text-bfaa40 lg:text-2xl lg:leading-7.315 mt-0.25 lg:mt-0.5">Lawana</div>
 				</div>
 				<div id="nav-menu" class="lg:gap-10.5 flex lg:flex-row flex-col justify-around lg:justify-start absolute top-0 left-0 w-0 overflow-hidden h-screen bg-2b2922 lg:bg-transparent bg-opacity-90 items-center lg:items-start lg:relative lg:w-max lg:h-max transition-all z-50">
 					<div class="nav-menu-link">
@@ -50,14 +50,17 @@
 			</div>
 		</div>
 		<!-- Showcase -->
-		<div id="showcase" class="transition-all duration-500 bg-center bg-no-repeat bg-cover lg:bg-none bg-showcase">
-			<div class="container">
+		<div id="showcase" class="relative">
+			<div class="container lg:pt-9.5 lg:pb-20 pt-37 pb-105">
 				<div id="showcase-header" class="relative z-40 flex gap-6.25 lg:gap-7.5 flex-col lg:flex-row items-start">
-					<div id="showcase-header-heading" class="lg:w-1/2 xl:w-57.33 font-extrabold text-center text-white text-49 leading-14.9325 sm:text-72 sm:leading-25 lg:text-left sm:text-f1f0ef bg-blue-500">Your Justice Is Our Top Priority</div>
-					<div id="showcase-header-text" class="lg:w-1/2 xl:w-40.17 section-paragraph lg:mt-9 text-center lg:text-left text-white sm:text-e7e6e4 bg-orange-200">As a state of law, maintaining justice is something that every citizen must pay attention to, and we are here to uphold justice for you</div>
+					<div id="showcase-header-heading" class="lg:w-1/2 xl:w-57.33 font-extrabold text-center text-white text-49 leading-14.9325 sm:text-72 sm:leading-25 lg:text-left sm:text-f1f0ef">Your Justice Is Our Top Priority</div>
+					<div id="showcase-header-text" class="lg:w-1/2 xl:w-40.17 section-paragraph lg:mt-9 text-center lg:text-left text-white sm:text-e7e6e4">As a state of law, maintaining justice is something that every citizen must pay attention to, and we are here to uphold justice for you</div>
 				</div>
 			</div>
-			<div id="showcase-arrows" class="absolute z-40 flex -translate-x-1/2 bg-orange-400 2xl:mx-auto lg:justify-end max-w-360 lg:relative left-1/2 lg:left-auto lg:translate-x-0">
+			<div id="showcase-img" class="absolute top-0 left-0 right-0 h-full -z-10 lg:relative lg:top-auto lg:left-auto lg:right-auto lg:z-10">
+				<img src="./resources/images/02_showcase/showcase_1.jpg" alt="showcase-img" id="showcase-main-img" class="object-cover h-full">
+			</div>
+			<div id="showcase-arrows" class="absolute z-40 flex -translate-x-1/2 2xl:mx-auto lg:justify-end max-w-360 lg:relative left-1/2 lg:left-auto lg:translate-x-0 lg:mt-0 -mt-8.75 sm:-mt-15.5">
 				<div id="showcase-arrows-left" class="bg-39372d showcase-arrow-box">
 					<div id="showcase-arrows-left-arrow" class="rounded-full sm:w-15 sm:h-15 w-8.4675 h-8.4675 border-0.35 border-solid border-a08f36 flex items-center justify-center">
 						<svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="hidden sm:block">
@@ -81,7 +84,7 @@
 			</div>
 		</div>
 		<!-- About 1 -->
-		<div id="about-1" class="bg-green-400 lg:py-37.5 pb-25">
+		<div id="about-1" class="lg:py-37.5 pb-25 pt-33.75">
 			<div class="container flex flex-col lg:flex-row lg:justify-between px-6.25 sm:px-3.75 relative">
 				<div id="about-1-img" class="w-50.63 bg-no-repeat sm:w-full lg:w-1/2 pt-53 sm:py-25 pl-27 sm:pl-50 lg:pl-25 xl:pl-50 bg-about-1-main-mobile sm:bg-about-1-main mt-45.75 sm:mt-0">
 					<div id="about-1-img-box" class="w-max">

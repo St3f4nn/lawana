@@ -77,6 +77,7 @@ module.exports = {
         33.25: '133px',
         33.75: '135px',
         35.5: '142px',
+        37: '148px',
         37.5: '150px',
         43: '172px',
         44.25: '177px',
@@ -207,7 +208,6 @@ module.exports = {
         125: '500px'
       },
       backgroundImage: {
-        'showcase': "url('../resources/images/02_showcase/showcase_1.jpg');",
         'about-1-side': "url('../resources/images/03_about_1/about_1_side.jpg');",
         'about-1-side-mobile': "url('../resources/images/03_about_1/about_1_side_mobile.jpg');",
         'about-1-main': " url('../resources/images/03_about_1/about_1_main.jpg');",

@@ -7,9 +7,9 @@
         @apply px-3.75;
     }
 
-    /* .nav-menu-link {
+    .nav-menu-link {
         @apply lg:mt-3.75;
-    } */
+    }
 
     .nav-menu-link-el {
         @apply text-base text-center transition-all sm:text-lg text-aba9a1 hover:text-e7e6e4 lg:text-left;
@@ -21,6 +21,10 @@
 
     .section-paragraph {
         @apply text-sm leading-5.25 sm:text-xl font-normal sm:leading-8 text-e7e6e4;
+    }
+
+    #showcase-img img {
+        @apply w-full;
     }
 
     .showcase-arrow-box {

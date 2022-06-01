@@ -7,18 +7,18 @@ const htmlBody = document.querySelector('body');
 const navBurger = document.querySelector('#nav-burger');
 const navMenu = document.querySelector('#nav-menu');
 
-// const showcaseSection = document.querySelector('#showcase');
+const showcaseImgElement = document.querySelector('#showcase-main-img');
 
-// const showcaseBackgroundImages = [
-//     'showcase_1',
-//     'showcase_2',
-//     'showcase_3'
-// ];
+const showcaseBackgroundImages = [
+    'showcase_1',
+    'showcase_2',
+    'showcase_3'
+];
 
-// const showcaseBtnLeft = document.querySelector('#showcase-arrows-left');
-// const showcaseBtnRight = document.querySelector('#showcase-arrows-right');
+const showcaseBtnLeft = document.querySelector('#showcase-arrows-left');
+const showcaseBtnRight = document.querySelector('#showcase-arrows-right');
 
-// let showcaseIndex = 0;
+let showcaseIndex = 0;
 
 // const testimonialsSlider = document.querySelector('#testimonials-container');
 // const testimonialsSliderCards = document.querySelectorAll('.testimonials-container-card');
@@ -131,33 +131,32 @@ teamBtnLeft.addEventListener('click', function() {
 
 navBurger.addEventListener('click', function() {
     htmlBody.classList.toggle('overflow-hidden');
-    let screenWidth = screen.availWidth;
 
-    if (screenWidth >= 768) {
+    if (window.innerWidth >= 768) {
         navMenu.classList.toggle('w-1/2');
-    } else if (screenWidth >= 640) {
+    } else if (window.innerWidth >= 640) {
         navMenu.classList.toggle('w-3/5');
     } else {
         navMenu.classList.toggle('w-4/5');
     };
 });
 
-// showcaseBtnLeft.addEventListener('click', function() {
-//     showcaseIndex--;
+showcaseBtnLeft.addEventListener('click', function() {
+    showcaseIndex--;
 
-//     if (showcaseIndex < 0) {
-//         showcaseIndex = showcaseBackgroundImages.length - 1;
-//     };
+    if (showcaseIndex < 0) {
+        showcaseIndex = showcaseBackgroundImages.length - 1;
+    };
 
-//     showcaseSection.style.backgroundImage = `url('./resources/images/02_showcase/${showcaseBackgroundImages[showcaseIndex]}.jpg')`;
-// });
+    showcaseImgElement.src = `./resources/images/02_showcase/${showcaseBackgroundImages[showcaseIndex]}.jpg`;
+});
 
-// showcaseBtnRight.addEventListener('click', function() {
-//     showcaseIndex++;
+showcaseBtnRight.addEventListener('click', function() {
+    showcaseIndex++;
 
-//     if (showcaseIndex > showcaseBackgroundImages.length - 1) {
-//         showcaseIndex = 0;
-//     };
+    if (showcaseIndex > showcaseBackgroundImages.length - 1) {
+        showcaseIndex = 0;
+    };
 
-//     showcaseSection.style.backgroundImage = `url('./resources/images/02_showcase/${showcaseBackgroundImages[showcaseIndex]}.jpg')`;
-// });
+    showcaseImgElement.src = `./resources/images/02_showcase/${showcaseBackgroundImages[showcaseIndex]}.jpg`;
+});
