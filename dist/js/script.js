@@ -4,8 +4,12 @@
 
 const htmlBody = document.querySelector('body');
 
+// Navigation bar
+
 const navBurger = document.querySelector('#nav-burger');
 const navMenu = document.querySelector('#nav-menu');
+
+// Showcase
 
 const showcaseImgElement = document.querySelector('#showcase-main-img');
 
@@ -20,27 +24,96 @@ const showcaseBtnRight = document.querySelector('#showcase-arrows-right');
 
 let showcaseIndex = 0;
 
-// const testimonialsSlider = document.querySelector('#testimonials-container');
-// const testimonialsSliderCards = document.querySelectorAll('.testimonials-container-card');
-
-// let index = 0;
-
-// const interval = 5000;
-// const testimonialWidth = testimonialsSliderCards[index].clientWidth;
+// Team
 
 const teamDots = document.querySelectorAll('.team-dots-dot');
 
 const teamSlider = document.querySelector('#team-container');
 const teamSliderCards = document.querySelectorAll('.team-container-card');
+const gapBetween = window.innerWidth >= 640 ? 32 : 12;
 
-let screenWidth = screen.availWidth;
-const gapBetween = screenWidth >= 640 ? 32 : 12;
-
-const teamBtnLeft = document.querySelector('#btn-left');
-const teamBtnRight = document.querySelector('#btn-right');
+const teamBtnLeft = document.querySelector('#team-content-arrows-left');
+const teamBtnRight = document.querySelector('#team-content-arrows-right');
 
 let teamIndex = 0;
 const teamSliderCardWidth = teamSliderCards[teamIndex].clientWidth;
+
+// Testimonials
+
+const testimonialsSlider = document.querySelector('#testimonials-container');
+const testimonialsSliderCards = document.querySelectorAll('.testimonials-container-card');
+
+let testimonialsIndex = 0;
+
+const interval = 5000;
+const testimonialsWidth = testimonialsSliderCards[testimonialsIndex].clientWidth;
+
+// Functions
+
+// Testimonials
+
+function resetSliding() {
+    testimonialsSlider.style.transform = `translateX(0px)`;
+};
+
+function startSliding() {
+    setInterval(function() {
+        if (window.innerWidth >= 1024) {
+            testimonialsIndex++;
+            testimonialsSlider.style.transform = `translateX(${(-testimonialsWidth - 24) * testimonialsIndex}px)`;
+            
+            if (testimonialsIndex > testimonialsSliderCards.length - 1) {
+                testimonialsIndex = 0;
+                resetSliding();
+            };
+        } else {
+            testimonialsIndex = 0;
+            resetSliding();
+        };
+    }, interval);
+};
+
+startSliding();
+
+// Event listeners
+
+// Navigation bar
+
+navBurger.addEventListener('click', function() {
+    htmlBody.classList.toggle('overflow-hidden');
+
+    if (window.innerWidth >= 768) {
+        navMenu.classList.toggle('w-1/2');
+    } else if (window.innerWidth >= 640) {
+        navMenu.classList.toggle('w-3/5');
+    } else {
+        navMenu.classList.toggle('w-4/5');
+    };
+});
+
+// Showcase
+
+showcaseBtnLeft.addEventListener('click', function() {
+    showcaseIndex--;
+
+    if (showcaseIndex < 0) {
+        showcaseIndex = showcaseBackgroundImages.length - 1;
+    };
+
+    showcaseImgElement.src = `./resources/images/02_showcase/${showcaseBackgroundImages[showcaseIndex]}.jpg`;
+});
+
+showcaseBtnRight.addEventListener('click', function() {
+    showcaseIndex++;
+
+    if (showcaseIndex > showcaseBackgroundImages.length - 1) {
+        showcaseIndex = 0;
+    };
+
+    showcaseImgElement.src = `./resources/images/02_showcase/${showcaseBackgroundImages[showcaseIndex]}.jpg`;
+});
+
+// Team
 
 teamBtnRight.addEventListener('click', function() {
     teamIndex++;
@@ -63,10 +136,10 @@ teamBtnRight.addEventListener('click', function() {
         teamSliderCards[0].classList.add('active-card');
     };
 
-    const teamSliderCardWidth = teamSliderCards[teamIndex].clientWidth;
+    const teamSliderCardDimensions = teamSliderCards[teamIndex].getBoundingClientRect();
+    const teamSliderCardWidth = teamSliderCardDimensions.width;
 
     if (teamIndex > teamSliderCards.length - 1) {
-        teamIndex = 0;
         teamSlider.style.transform = `translateX(0px)`;
     };
 
@@ -94,69 +167,12 @@ teamBtnLeft.addEventListener('click', function() {
         teamSliderCards[teamSliderCards.length - 1].classList.add('active-card');
     };
 
-    const teamSliderCardWidth = teamSliderCards[teamIndex].clientWidth;
+    const teamSliderCardDimensions = teamSliderCards[teamIndex].getBoundingClientRect();
+    const teamSliderCardWidth = teamSliderCardDimensions.width;
 
     if (teamIndex < 0) {
         teamIndex = teamSliderCards.length - 1;
     };
 
     teamSlider.style.transform = `translateX(${(-teamSliderCardWidth - gapBetween) * teamIndex}px)`;
-});
-
-// Functions
-
-// function startSliding() {
-//     setInterval(function() {
-//         index++;
-//         testimonialsSlider.style.transform = `translateX(${(-testimonialWidth - 24) * index}px)`;
-        
-//         if (index > testimonialsSliderCards.length - 1) {
-//             index = 0;
-//             resetSliding();
-//         };
-//     }, interval);
-// };
-
-// function resetSliding() {
-//     testimonialsSlider.style.transform = `translateX(0px)`;
-// };
-
-// if (window.innerWidth >= 1024) {
-//     startSliding();
-// } else {
-//     resetSliding();
-// };
-
-// Event listeners
-
-navBurger.addEventListener('click', function() {
-    htmlBody.classList.toggle('overflow-hidden');
-
-    if (window.innerWidth >= 768) {
-        navMenu.classList.toggle('w-1/2');
-    } else if (window.innerWidth >= 640) {
-        navMenu.classList.toggle('w-3/5');
-    } else {
-        navMenu.classList.toggle('w-4/5');
-    };
-});
-
-showcaseBtnLeft.addEventListener('click', function() {
-    showcaseIndex--;
-
-    if (showcaseIndex < 0) {
-        showcaseIndex = showcaseBackgroundImages.length - 1;
-    };
-
-    showcaseImgElement.src = `./resources/images/02_showcase/${showcaseBackgroundImages[showcaseIndex]}.jpg`;
-});
-
-showcaseBtnRight.addEventListener('click', function() {
-    showcaseIndex++;
-
-    if (showcaseIndex > showcaseBackgroundImages.length - 1) {
-        showcaseIndex = 0;
-    };
-
-    showcaseImgElement.src = `./resources/images/02_showcase/${showcaseBackgroundImages[showcaseIndex]}.jpg`;
 });

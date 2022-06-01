@@ -87,6 +87,14 @@
         @apply w-4 h-4 sm:w-6 sm:h-6 bg-bfaa40;
     }
 
+    .team-content-arrow {
+        @apply flex items-center justify-center transition-all bg-red-500 rounded-full cursor-pointer w-15 h-15 hover:bg-bfaa40;
+    }
+
+    .team-content-arrow:hover svg path {
+        @apply transition-all stroke-white;
+    }
+
     .team-container-card {
         @apply w-max sm:pt-22.25 pt-52.91 bg-no-repeat bg-center bg-cover flex-shrink-0 flex-grow-0;
     }

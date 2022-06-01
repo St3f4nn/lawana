@@ -127,7 +127,7 @@
 							<div class="services-container-item-bottom-btn">
 								<svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M2 2L10.6154 10L2 18" stroke="#BFAA40" stroke-width="2" stroke-linecap="square"/>
-								</svg>	
+								</svg>
 							</div>
 						</div>
 					</div>
@@ -142,7 +142,7 @@
 							<div class="services-container-item-bottom-btn">
 								<svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M2 2L10.6154 10L2 18" stroke="#BFAA40" stroke-width="2" stroke-linecap="square"/>
-								</svg>	
+								</svg>
 							</div>
 						</div>
 					</div>
@@ -157,7 +157,7 @@
 							<div class="services-container-item-bottom-btn">
 								<svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M2 2L10.6154 10L2 18" stroke="#BFAA40" stroke-width="2" stroke-linecap="square"/>
-								</svg>	
+								</svg>
 							</div>
 						</div>
 					</div>
@@ -172,7 +172,7 @@
 							<div class="services-container-item-bottom-btn">
 								<svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M2 2L10.6154 10L2 18" stroke="#BFAA40" stroke-width="2" stroke-linecap="square"/>
-								</svg>	
+								</svg>
 							</div>
 						</div>
 					</div>
@@ -200,9 +200,9 @@
 			</div>
 		</div>
 		<!-- Team -->
-		<div id="team" class="overflow-x-hidden pt-13.25 bg-lime-900">
-			<div class="container relative flex flex-col-reverse sm:flex-col gap-9.75 sm:gap-16">
-				<div id="team-dots" class="flex items-center justify-center sm:justify-start sm:gap-4 gap-3.3325 h-4 sm:h-6">
+		<div id="team" class="overflow-x-hidden">
+			<div class="container relative pb-13.75 lg:pb-0">
+				<div id="team-dots" class="flex items-center justify-center sm:justify-start sm:gap-4 gap-3.3325 h-4 sm:h-6 absolute lg:top-13.25 lg:left-3.75 bottom-0 left-1/2 -translate-x-1/2 lg:translate-x-0">
 					<div class="team-dots-dot active-dot"></div>
 					<div class="team-dots-dot"></div>
 					<div class="team-dots-dot"></div>
@@ -214,7 +214,25 @@
 					<div class="team-dots-dot"></div>
 					<div class="team-dots-dot"></div>
 				</div>
-				<div id="team-container" class="flex items-center h-auto gap-3 transition-all sm:items-end sm:gap-8 min-h-540 sm:translate-x-0 translate-x-2.5">
+				<div id="team-content" class="relative flex flex-col items-end gap-8 lg:items-start lg:flex-row lg:justify-end xl:z-10 xl:gap-25">
+					<div id="team-content-text" class="lg:w-max">
+						<div id="team-content-text-heading" class="section-heading lg:max-w-120.5 mr-3.25 sm:mr-0 ml-2.75 sm:ml-0">Our Professional Lawyer For Your</div>
+						<div id="team-content-text-paragraph" class="section-paragraph mt-6.25 lg:max-w-120.5 sm:mt-6 mr-4 sm:mr-0 ml-2.75 sm:ml-0">We present professional lawyers whose quality is unquestionable because of their experience who has handled many cases</div>
+					</div>
+					<div id="team-content-arrows" class="flex gap-2.25 sm:gap-6 lg:mt-43">
+						<div id="team-content-arrows-left" class="team-content-arrow bg-39372d">
+							<svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M13 22L2.23077 12L13 2" stroke="#A08F36" stroke-width="2" stroke-linecap="square"/>
+							</svg>
+						</div>
+						<div id="team-content-arrows-right" class="team-content-arrow bg-a08f36">
+							<svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2 2L12.7692 12L2 22" stroke="white" stroke-width="2" stroke-linecap="square"/>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div id="team-container" class="flex items-center h-auto min-h-430 gap-3 transition-all sm:items-end sm:gap-8 sm:min-h-540 xl:-mt-27.25 relative xl:z-0 mt-8 pl-2.5 sm:pl-0">
 					<div class="team-container-card bg-lawyer-1 active-card">
 						<div class="team-container-card-content">
 							<div class="team-container-card-content-heading">James Smith</div>
@@ -356,8 +374,6 @@
 						</div>
 					</div>
 				</div>
-				<button id="btn-left" class="absolute top-0 right-10">&#128072;</button>
-				<button id="btn-right" class="absolute top-0 right-0">&#128073;</button>
 			</div>
 		</div>
 		<!-- Testimonials -->
