@@ -132,20 +132,18 @@ teamBtnRight.addEventListener('click', function() {
 
     if (activeCard.nextElementSibling) {
         activeCard.nextElementSibling.classList.add('active-card');
+
+        const teamSliderCardDimensions = teamSliderCards[teamIndex].getBoundingClientRect();
+        const teamSliderCardWidth = teamSliderCardDimensions.width;
+
+        teamSlider.style.transform = `translateX(${(-teamSliderCardWidth - gapBetween) * teamIndex}px)`;
     } else {
         teamSliderCards[teamSliderCards.length - 1].classList.add('active-card');
     };
 
-    const teamSliderCardDimensions = teamSliderCards[teamIndex].getBoundingClientRect();
-    const teamSliderCardWidth = teamSliderCardDimensions.width;
-
     if (teamIndex > teamSliderCards.length - 1) {
-        // teamSlider.style.transform = `translateX(0px)`;
-
         teamIndex = teamSliderCards.length - 1;
     };
-
-    teamSlider.style.transform = `translateX(${(-teamSliderCardWidth - gapBetween) * teamIndex}px)`;
 });
 
 teamBtnLeft.addEventListener('click', function() {
@@ -165,18 +163,16 @@ teamBtnLeft.addEventListener('click', function() {
 
     if (activeCard.previousElementSibling) {
         activeCard.previousElementSibling.classList.add('active-card');
+
+        const teamSliderCardDimensions = teamSliderCards[teamIndex].getBoundingClientRect();
+        const teamSliderCardWidth = teamSliderCardDimensions.width;
+
+        teamSlider.style.transform = `translateX(${(-teamSliderCardWidth - gapBetween) * teamIndex}px)`;
     } else {
         teamSliderCards[0].classList.add('active-card');
     };
 
-    const teamSliderCardDimensions = teamSliderCards[teamIndex].getBoundingClientRect();
-    const teamSliderCardWidth = teamSliderCardDimensions.width;
-
     if (teamIndex < 0) {
-        // teamIndex = teamSliderCards.length - 1;
-
         teamIndex = 0;
     };
-
-    teamSlider.style.transform = `translateX(${(-teamSliderCardWidth - gapBetween) * teamIndex}px)`;
 });

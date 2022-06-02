@@ -182,7 +182,7 @@
     /* Footer */
 
     .footer-container-heading {
-        @apply font-bold text-2xl leading-7.315 text-a08f36 sm:text-28 sm:leading-8.5325
+        @apply font-bold text-2xl leading-7.315 text-a08f36 sm:text-28 sm:leading-8.5325;
     }
 
     .footer-container-menu {
