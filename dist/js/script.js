@@ -124,7 +124,7 @@ teamBtnRight.addEventListener('click', function() {
     if (activeDot.nextElementSibling) {
         activeDot.nextElementSibling.classList.add('active-dot');
     } else {
-        teamDots[0].classList.add('active-dot');
+        teamDots[teamDots.length - 1].classList.add('active-dot');
     };
 
     const activeCard = document.querySelector('.active-card');
@@ -133,14 +133,16 @@ teamBtnRight.addEventListener('click', function() {
     if (activeCard.nextElementSibling) {
         activeCard.nextElementSibling.classList.add('active-card');
     } else {
-        teamSliderCards[0].classList.add('active-card');
+        teamSliderCards[teamSliderCards.length - 1].classList.add('active-card');
     };
 
     const teamSliderCardDimensions = teamSliderCards[teamIndex].getBoundingClientRect();
     const teamSliderCardWidth = teamSliderCardDimensions.width;
 
     if (teamIndex > teamSliderCards.length - 1) {
-        teamSlider.style.transform = `translateX(0px)`;
+        // teamSlider.style.transform = `translateX(0px)`;
+
+        teamIndex = teamSliderCards.length - 1;
     };
 
     teamSlider.style.transform = `translateX(${(-teamSliderCardWidth - gapBetween) * teamIndex}px)`;
@@ -155,7 +157,7 @@ teamBtnLeft.addEventListener('click', function() {
     if (activeDot.previousElementSibling) {
         activeDot.previousElementSibling.classList.add('active-dot');
     } else {
-        teamDots[teamDots.length - 1].classList.add('active-dot');
+        teamDots[0].classList.add('active-dot');
     };
 
     const activeCard = document.querySelector('.active-card');
@@ -164,14 +166,16 @@ teamBtnLeft.addEventListener('click', function() {
     if (activeCard.previousElementSibling) {
         activeCard.previousElementSibling.classList.add('active-card');
     } else {
-        teamSliderCards[teamSliderCards.length - 1].classList.add('active-card');
+        teamSliderCards[0].classList.add('active-card');
     };
 
     const teamSliderCardDimensions = teamSliderCards[teamIndex].getBoundingClientRect();
     const teamSliderCardWidth = teamSliderCardDimensions.width;
 
     if (teamIndex < 0) {
-        teamIndex = teamSliderCards.length - 1;
+        // teamIndex = teamSliderCards.length - 1;
+
+        teamIndex = 0;
     };
 
     teamSlider.style.transform = `translateX(${(-teamSliderCardWidth - gapBetween) * teamIndex}px)`;

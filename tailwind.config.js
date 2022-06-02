@@ -227,7 +227,12 @@ module.exports = {
         'lawyer-7': "url('../resources/images/06_team/team_lawyer_7.jpg');",
         'lawyer-8': "url('../resources/images/06_team/team_lawyer_8.jpg');",
         'lawyer-9': "url('../resources/images/06_team/team_lawyer_9.jpg');",
-        'lawyer-10': "url('../resources/images/06_team/team_lawyer_10.jpg');"
+        'lawyer-10': "url('../resources/images/06_team/team_lawyer_10.jpg');",
+        'testimonials-1': "url('../resources/images/07_testimonials/testimonials_1.svg');",
+        'testimonials-2': "url('../resources/images/07_testimonials/testimonials_2.svg');",
+        'testimonials-3': "url('../resources/images/07_testimonials/testimonials_3.svg');",
+        'testimonials-quotes': "url('../resources/images/07_testimonials/testimonials_quotes.svg');",
+        'testimonials-quotes-mobile': "url('../resources/images/07_testimonials/testimonials_quotes_mobile.svg');"
       },
       minHeight: {
         '430': '430px',
