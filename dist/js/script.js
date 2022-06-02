@@ -2,6 +2,8 @@
 
 // Elements
 
+// General
+
 const htmlBody = document.querySelector('body');
 
 // Navigation bar
